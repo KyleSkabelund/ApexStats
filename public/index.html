@@ -22,18 +22,29 @@
         text-align: center;
     }
 </style>
-
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <HTML>
     <head>
+            <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+                    <ul class="nav navbar-nav">
+                   <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+                   <li><a href="/about">About us</a></li>
+                   <li><a href="/contact">Contact us</a></li>
+                 </ul>
+             </nav>
     </head>
     <body>
         <div class = 'title'>Apex Legends Stat Site</div>
         <div class = 'search'>
             <span>ApexLegendID:</span>
             <input type="text"/>
-            <input type="button" class ='button' value="PS4"/>
-            <input type="button" class ='button' value="PC"/>
-            <input type="button" class ='button' value="Xbox"/>
+            <button type="radio" class="btn btn-primary">Search</button>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" role="group">
+                <button type="radio" class="btn btn-primary">PS4</button>
+                <button type="radio" class="btn btn-primary">PC</button>
+                <button type="radio" class="btn btn-primary">Xbox</button>
+            </div>
         </div>
     </body>
 </HTML>
